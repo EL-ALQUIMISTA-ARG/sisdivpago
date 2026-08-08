@@ -1,0 +1,183 @@
+:root {
+    --primary-color: #8A2BE2;
+    --secondary-color: #9932CC;
+    --background-color: #f0f0f5;
+    --card-background: #ffffff;
+    --text-color: #333;
+    --border-color: #ddd;
+    --chakra-1: #FF0000;
+    --chakra-2: #FFA500;
+    --chakra-3: #FFFF00;
+    --chakra-4: #00FF00;
+    --chakra-5: #0000FF;
+    --chakra-6: #4B0082;
+    --chakra-7: #9400D3;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: transparent !important;
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.panel {
+    background-color: var(--card-background);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.input-header label {
+    font-weight: bold;
+    color: var(--primary-color);
+    width: 45%;
+    text-align: center;
+}
+
+.input-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.input-fields input {
+    width: 45%;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 12px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.list-display {
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 50px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chakra-number {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.results-display {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 200px;
+    border: 1px solid var(--border-color);
+    font-size: 0.9em;
+    line-height: 1.6;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.7em;
+    color: #999;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    .panel {
+        padding: 15px;
+    }
+    input[type="text"] {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    .button-grid {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 1.7em;
+    }
+}
