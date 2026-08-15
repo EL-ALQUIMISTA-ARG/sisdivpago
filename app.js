@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cleanContent = cleanContent.replace(/\(?\b\d{6,}\b\)?/g, "");
         cleanContent = cleanContent.replace(/\s\s+/g, ' ');
 
-        const logoURL = "https://static.wixstatic.com/media/0ae964_84484a238d7c433b8dfbd20f84054db3~mv2.png/v1/fill/w_417,h_437,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LOGO%20DE%20REDES.png";
+        const logoURL = "https://cdn.jsdelivr.net/gh/EL-ALQUIMISTA-ARG/sisdivpago@main/ziz.png";
         const printWindow = window.open('', '_blank');
         printWindow.document.write(`
             <html>
